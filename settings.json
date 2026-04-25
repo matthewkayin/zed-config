@@ -7,6 +7,29 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "toolbar": {
+    "agent_review": false
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "button": true,
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "extend_comment_on_newline": false,
   "format_on_save": "off",
   "scroll_sensitivity": 4.0,
   "inlay_hints": {
@@ -19,7 +42,7 @@
     "inline_blame": {
       "enabled": false,
     },
-    "git_gutter": "hide",
+    "git_gutter": "tracked_files",
   },
   "relative_line_numbers": "enabled",
   "word_diff_enabled": true,
@@ -36,7 +59,7 @@
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_size": 11.0,
-  "theme": "Gruvbox Dark",
+  "theme": "Catppuccin Macchiato - No Italics",
   "lsp": {
     "lua-language-server": {
       "settings": {
@@ -45,11 +68,6 @@
             "disable": ["lowercase-global"],
           },
         },
-      },
-    },
-    "clangd": {
-      "binary": {
-        "arguments": ["--function-arg-placeholders=false"],
       },
     },
   },
